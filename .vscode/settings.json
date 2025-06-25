@@ -1,0 +1,11 @@
+{
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-24",
+      "path": "C:/Program Files/Java/jdk-24",  // or your actual JDK 24 path
+      "default": true
+    }
+],
+"java.compile.nullAnalysis.mode": "automatic",
+"java.configuration.updateBuildConfiguration": "interactive"
+}

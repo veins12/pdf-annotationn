@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Annotation Tool</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive PDF Annotation</h1>
+        
+        <div class="controls">
+            <input type="file" id="pdf-upload" accept=".pdf">
+            
+            <div class="pagination">
+                <button id="prev-page" disabled>Previous</button>
+                <span>Page <span id="page_num">1</span> of <span id="page_count">0</span></span>
+                <button id="next-page" disabled>Next</button>
+            </div>
+            
+            <div class="annotation-form" style="display: none;">
+                <label for="color-select">Color:</label>
+                <select id="color-select">
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+                
+                <label for="link-input">Link URL:</label>
+                <input type="url" id="link-input" placeholder="https://example.com">
+                
+                <button id="apply-annotation">Apply Annotation</button>
+            </div>
+
+            <button id="download-btn" disabled>Download Annotated PDF</button>
+        </div>
+        
+        <div id="pdf-container">
+            <canvas id="pdf-canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

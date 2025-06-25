@@ -1,0 +1,3 @@
+com\dnxt\pdfannotation\PdfAnnotationApplication.class
+com\dnxt\pdfannotation\service\PdfService.class
+com\dnxt\pdfannotation\controller\PdfController.class
